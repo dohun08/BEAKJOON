@@ -30,11 +30,12 @@ n = int(input())
 
 line = 1
 
+# 몇번째 대각선인지 구하기
 while n > line:
-    n -= line
-    line += 1
+    n -= line # n 이 작아질때까지 구하기
+    line += 1 # 한줄씩 갈때마다 1개씩 요소추가됨
     
-if line % 2 == 0:
+if line % 2 == 0: # 짝수 줄일때 
     numerator = n
     denominator = line - n + 1
 else:
